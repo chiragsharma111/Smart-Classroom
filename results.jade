@@ -1,0 +1,14 @@
+link(href='style.css', rel='stylesheet')
+div(class="dtab")
+	br
+	table(border='0')
+		thead
+			tr
+				th Rank
+				th Title
+		tbody
+			each item, i in items
+				tr
+					td= item.Rank
+					td 
+						a(href=item.Link)= item.Title

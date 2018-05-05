@@ -1,0 +1,16 @@
+link(href='style.css', rel='stylesheet')
+div(class="dtab")
+	img(src='#{login_url}'+'/entity.png')
+	br
+	table(border='0')
+		thead
+			tr
+				th #
+				th X
+				th Y
+		tbody
+			each item, i in items
+				tr
+					td= i+1
+					td= item.X
+					td= item.Y

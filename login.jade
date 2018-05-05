@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		title Login
+		style.
+			form{
+			position: relative;
+			z-index: 1;
+			background: #FFFFFF;
+			max-width: 360px;
+			margin: 0 auto 100px;
+			padding: 45px;
+			text-align:center;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+			}
+			form input{
+			font-family:"Roboto",sans-serif;
+			background: #f2f2f2;
+			border: 0px;
+			width: 100%;
+			box-sizing: border-box;
+			outline: 0;
+			padding: 15px;
+			margin: 0 0 15px;
+			font-size:14px;
+			}
+			body{
+			background-color:#ff9900;
+			}
+			.Login-Page{
+			padding: 8% 0 0;
+			}
+			button{
+			font-family:"Roboto",sans-serif;
+			background: #0088b2;
+			padding: 5px;
+			width: 100%;
+			border: 0;
+			color: #ffffff;
+			font-size:14px;
+			}
+			form button:hover,form button:active,form button:focus{
+			background: #09b3da;
+			}
+	body
+		.Login-Page
+			form.login-form(action= '#{login_url}', method='POST')
+				input(type='text', placeholder='name', name='un')
+				input(type='password', placeholder='password', name='pass')
+				button LOGIN

@@ -1,0 +1,14 @@
+.dtab{
+	font-family:"Roboto",sans-serif;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	border: 0.5px;
+	margin: 0 auto 100px;
+	}
+thead{
+	background-color:#ff9900;
+}
+tbody{
+	background: #f2f2f2;
+}
